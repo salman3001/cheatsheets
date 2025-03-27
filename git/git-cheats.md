@@ -110,3 +110,27 @@ git stash list
 ```
 git stash apply stash-name
 ```
+
+### undo last commit and edit
+
+```
+git reset --soft HEAD~1
+```
+
+### edit older local commits and rebase histroy
+
+```
+git rebase -i HEAD~5
+```
+
+- here 5 is number of steps you want to rebase. after git will prompt to select the commits you want to edit . just replace pick with edit before the commit name. now you can save. then run below command to undo commit but keep the changes.
+
+```
+git reset --soft HEAD~1
+```
+
+- once you are done making changes commit again and run below command to counitnue the rebase
+
+```
+git rebase --continue
+```
