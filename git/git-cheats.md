@@ -24,6 +24,12 @@ git fetch orgin
 git fetch upstream
 ```
 
+fetch and prune deleted branches
+
+```
+git fetch --prune
+```
+
 ### Merge remote tracking branch in active branch
 
 ```
