@@ -140,3 +140,14 @@ git reset --soft HEAD~1
 ```
 git rebase --continue
 ```
+
+### create remote tracking branch or point exitsing local branch to remote tracking branch
+
+- create
+```
+git push -u origin <local-branch>
+```
+- set tracking branch
+```
+git branch --set-upstream-to=origin/dev my-feature
+```
